@@ -27,8 +27,6 @@ export default class FilteredApp extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log('this', this.props);
-    console.log('prev', prevProps);
     if (prevProps !== this.props) {
       this.loadData();
     }
